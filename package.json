@@ -1,16 +1,15 @@
 {
-  "name": "@nicolsam/accordion",
+  "name": "@nicolsam/template-library",
   "version": "0.0.1",
-  "description": "A simple library to create a accordion component",
+  "description": "My template to create React libraries",
   "scripts": {
     "build-lib": "rollup -c"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicolsam/accordion.git"
+    "url": "git+https://github.com/nicolsam/template-react-component-library.git"
   },
   "keywords": [
-    "Accordion",
     "Component",
     "React",
     "React",
@@ -19,9 +18,9 @@
   "author": "Nicolas Samuel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nicolsam/accordion/issues"
+    "url": "https://github.com/nicolsam/template-react-component-library/issues"
   },
-  "homepage": "https://github.com/nicolsam/accordion#readme",
+  "homepage": "https://github.com/nicolsam/template-react-component-library#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-node-resolve": "^13.3.0",
