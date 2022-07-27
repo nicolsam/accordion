@@ -61,6 +61,6 @@
   ],
   "types": "dist/index.d.ts",
   "dependencies": {
-    "framer-motion": "^6.5.1",
+    "framer-motion": "^6.5.1"
   }
 }
