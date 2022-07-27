@@ -5,14 +5,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import * as S from './styles';
 
 interface AccordionProps {
-    key: string | number;
     title: string;
     titleColor?: string;
     titleBackground?: string;
     children: string | JSX.Element;
 }
 
-const Accordion = ({ key, title, titleColor, titleBackground, children }: AccordionProps) => {
+const Accordion = ({ title, titleColor, titleBackground, children }: AccordionProps) => {
 
     const [open, isOpen] = useState(false);
 
@@ -21,7 +20,7 @@ const Accordion = ({ key, title, titleColor, titleBackground, children }: Accord
     }
 
     return (
-        <S.Container key={key}>
+        <S.Container>
 
             <S.Title 
                 onClick={() => handleOpenAccordion()} 
@@ -41,7 +40,6 @@ const Accordion = ({ key, title, titleColor, titleBackground, children }: Accord
                 <AnimatePresence initial={false}>
                     {open &&
                         <motion.div 
-                            key={`${key}-content`} 
                             initial="collapsed" 
                             animate="show" 
                             exit="collapsed" 
