@@ -1,6 +1,6 @@
 {
   "name": "@nicolsam/accordion",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple library to create a accordion component",
   "scripts": {
     "build-lib": "rollup -c",
