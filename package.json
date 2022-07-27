@@ -1,13 +1,15 @@
 {
-  "name": "@nicolsam/template-library",
+  "name": "@nicolsam/accordion",
   "version": "0.0.1",
-  "description": "My template to create React libraries",
+  "description": "A simple library to create a accordion component",
   "scripts": {
-    "build-lib": "rollup -c"
+    "build-lib": "rollup -c",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicolsam/template-react-component-library.git"
+    "url": "git+https://github.com/nicolsam/accordion.git"
   },
   "keywords": [
     "Component",
@@ -18,23 +20,47 @@
   "author": "Nicolas Samuel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nicolsam/template-react-component-library/issues"
+    "url": "https://github.com/nicolsam/accordion/issues"
   },
-  "homepage": "https://github.com/nicolsam/template-react-component-library#readme",
+  "homepage": "https://github.com/nicolsam/accordion#readme",
   "devDependencies": {
+    "@babel/core": "^7.18.9",
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.3",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-webpack5": "^6.5.9",
+    "@storybook/manager-webpack5": "^6.5.9",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.15",
+    "@types/styled-components": "^5.1.25",
+    "babel-loader": "^8.2.5",
     "react": "^18.2.0",
+    "react-icons": "^4.4.0",
     "rollup": "^2.77.0",
     "rollup-plugin-dts": "^4.2.2",
-    "typescript": "^4.7.4"
+    "rollup-plugin-postcss": "^4.0.2",
+    "styled-components": "^5.3.5",
+    "typescript": "^4.7.4",
+    "webpack": "^5.74.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "framer-motion": "^6.5.1",
+    "react-icons": "^4.4.0"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "framer-motion": "^6.5.1",
+    "react-dom": "^18.2.0"
+  }
 }
